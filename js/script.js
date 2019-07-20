@@ -80,7 +80,7 @@ const scenes = {
 	'gate': 'bg_gate.jpg',
 	'hall': 'bg_hall.jpg',
 	'corridor': 'bg_corridor.jpg',
-	'end': 'ui_end.jpg',
+	// 'end': 'ui_end.jpg',
 };
 
 // Define the Characters
