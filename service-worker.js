@@ -58,7 +58,7 @@ var files = [
 	"img/icons/icon_180x180.png",
 	"img/icons/icon_192x192.png",
 	"img/icons/icon_310x310.png",
-	"img/icons/icon_512x512.png"
+	"img/icons/icon_512x512.png",
 
 	// Scene Images
 	//"img/scenes/",
@@ -73,7 +73,7 @@ var files = [
 	//"img/ui/",
 
 	// Music Audio
-	// "audio/music/",
+	"audio/music/",
 
 	// Voice Audio
 	// "audio/voice/"

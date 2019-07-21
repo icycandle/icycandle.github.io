@@ -246,7 +246,9 @@ $_ready(function () {
 	});
 
 	// Play the main menu song
-	playAmbient();
+	setTimeout(() => {
+		playAmbient();
+	}, 1000);
 
 	/**
 	 * ======================
@@ -719,7 +721,7 @@ $_ready(function () {
 			if (parts[1] == "music") {
 
 				if (parts[3] == "loop") {
-					musicPlayer.setAttribute("loop", "");
+					musicPlayer.setAttribute("loop", true);
 				} else if (parts[3] == "noloop") {
 					musicPlayer.removeAttribute("loop");
 				}
@@ -742,7 +744,7 @@ $_ready(function () {
 			const parts = engine.Sound.split (" ");
 			if (parts[1] == "sound") {
 				if (parts[3] == "loop") {
-					soundPlayer.setAttribute("loop", "");
+					soundPlayer.setAttribute("loop", true);
 				} else if (parts[3] == "noloop") {
 					soundPlayer.removeAttribute("loop");
 				}
@@ -1534,7 +1536,7 @@ $_ready(function () {
 
 	function playAmbient () {
 		if (engine.MenuMusic != "") {
-			ambientPlayer.setAttribute("loop", "");
+			ambientPlayer.setAttribute("loop", true);
 
 			if (typeof music !== "undefined") {
 				if (typeof music[engine.MenuMusic] !== "undefined") {
@@ -1679,7 +1681,7 @@ $_ready(function () {
 										const last_song = engine.MusicHistory.pop().split(" ");
 
 										if (last_song[3] == "loop") {
-											musicPlayer.setAttribute("loop", "");
+											musicPlayer.setAttribute("loop", true);
 										} else if (last_song[3] == "noloop") {
 											musicPlayer.removeAttribute("loop");
 										}
@@ -1698,7 +1700,7 @@ $_ready(function () {
 										const last = engine.SoundHistory.pop().split(" ");
 
 										if (last[3] == "loop") {
-											soundPlayer.setAttribute("loop", "");
+											soundPlayer.setAttribute("loop", true);
 										} else if (last[3] == "noloop") {
 											soundPlayer.removeAttribute("loop");
 										}
@@ -1875,7 +1877,7 @@ $_ready(function () {
 							if (parts[1] == "music") {
 
 								if (parts[3] == "loop") {
-									musicPlayer.setAttribute("loop", "");
+									musicPlayer.setAttribute("loop", true);
 								} else if (parts[3] == "noloop") {
 									musicPlayer.removeAttribute("loop");
 								}
@@ -1898,7 +1900,7 @@ $_ready(function () {
 								}
 							} else if (parts[1] == "sound") {
 								if (parts[3] == "loop") {
-									soundPlayer.setAttribute("loop", "");
+									soundPlayer.setAttribute("loop", true);
 								} else if (parts[3] == "noloop") {
 									soundPlayer.removeAttribute("loop");
 								}
