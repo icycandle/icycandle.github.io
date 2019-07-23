@@ -42,6 +42,10 @@ function showEndingPage() {
 	// hide panel
 	$_("#game").hide();
 	$_("[data-menu='ending']").show();
+	const ambientPlayer = document.querySelector("[data-component='ambient']");
+	ambientPlayer.pause();
+	ambientPlayer.currentTime = 0;
+	ambientPlayer.play()
     return true;
 }
 
