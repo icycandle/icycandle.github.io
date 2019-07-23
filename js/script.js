@@ -62,6 +62,7 @@ const voice = {
 // Define the sounds used in the game.
 const sound = {
 	'school_bell': 'se_school_bell.mp3',
+	'glass': 'se_glass.mp3',
 };
 
 // Define the videos used in the game.
